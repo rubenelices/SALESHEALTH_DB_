@@ -1,0 +1,177 @@
+{
+"brand": [
+	{
+		"brand_id" : 1,
+		"name" : "Omron",
+		"country" : "Japón",
+		"website" : "https:\/\/omronhealthcare.com"
+	},
+	{
+		"brand_id" : 2,
+		"name" : "Beurer",
+		"country" : "Alemania",
+		"website" : "https:\/\/beurer.com"
+	},
+	{
+		"brand_id" : 3,
+		"name" : "Medisana",
+		"country" : "Alemania",
+		"website" : "https:\/\/medisana.com"
+	},
+	{
+		"brand_id" : 4,
+		"name" : "Xiaomi",
+		"country" : "China",
+		"website" : "https:\/\/mi.com"
+	},
+	{
+		"brand_id" : 5,
+		"name" : "Abbott",
+		"country" : "Estados Unidos",
+		"website" : "https:\/\/abbott.com"
+	},
+	{
+		"brand_id" : 6,
+		"name" : "Oral-B",
+		"country" : "Estados Unidos",
+		"website" : "https:\/\/oralb.com"
+	},
+	{
+		"brand_id" : 7,
+		"name" : "Philips",
+		"country" : "Países Bajos",
+		"website" : "https:\/\/philips.com"
+	},
+	{
+		"brand_id" : 8,
+		"name" : "Naipo",
+		"country" : "China",
+		"website" : null
+	},
+	{
+		"brand_id" : 9,
+		"name" : "Compex",
+		"country" : "Suiza",
+		"website" : "https:\/\/compex.com"
+	},
+	{
+		"brand_id" : 10,
+		"name" : "AliveCor",
+		"country" : "Estados Unidos",
+		"website" : "https:\/\/alivecor.com"
+	},
+	{
+		"brand_id" : 11,
+		"name" : "Invacare",
+		"country" : "Estados Unidos",
+		"website" : "https:\/\/invacare.com"
+	},
+	{
+		"brand_id" : 12,
+		"name" : "Rowenta",
+		"country" : "Alemania",
+		"website" : "https:\/\/rowenta.es"
+	},
+	{
+		"brand_id" : 13,
+		"name" : "Thermoval",
+		"country" : "Alemania",
+		"website" : null
+	},
+	{
+		"brand_id" : 14,
+		"name" : "Sunrise Medical",
+		"country" : "Estados Unidos",
+		"website" : "https:\/\/sunrisemedical.com"
+	},
+	{
+		"brand_id" : 15,
+		"name" : "Ortones",
+		"country" : "España",
+		"website" : null
+	},
+	{
+		"brand_id" : 16,
+		"name" : "Viatom",
+		"country" : "China",
+		"website" : null
+	},
+	{
+		"brand_id" : 17,
+		"name" : "BackFix",
+		"country" : "España",
+		"website" : null
+	},
+	{
+		"brand_id" : 18,
+		"name" : "Tanita",
+		"country" : "Japón",
+		"website" : "https:\/\/tanita.com"
+	},
+	{
+		"brand_id" : 19,
+		"name" : "Dyson",
+		"country" : "Reino Unido",
+		"website" : "https:\/\/dyson.com"
+	},
+	{
+		"brand_id" : 20,
+		"name" : "Fisioclinic",
+		"country" : "España",
+		"website" : null
+	},
+	{
+		"brand_id" : 21,
+		"name" : "Withings",
+		"country" : "Francia",
+		"website" : "https:\/\/www.withings.com"
+	},
+	{
+		"brand_id" : 22,
+		"name" : "Sonoline",
+		"country" : "China",
+		"website" : null
+	},
+	{
+		"brand_id" : 23,
+		"name" : "Seca",
+		"country" : "Alemania",
+		"website" : "https:\/\/seca.com"
+	},
+	{
+		"brand_id" : 24,
+		"name" : "Lumie",
+		"country" : "Reino Unido",
+		"website" : "https:\/\/lumie.com"
+	},
+	{
+		"brand_id" : 25,
+		"name" : "Microlife",
+		"country" : "Suiza",
+		"website" : "https:\/\/microlife.com"
+	},
+	{
+		"brand_id" : 26,
+		"name" : "Oxycare",
+		"country" : "Alemania",
+		"website" : null
+	},
+	{
+		"brand_id" : 27,
+		"name" : "RespiPro",
+		"country" : "República Checa",
+		"website" : "https:\/\/respilon.com"
+	},
+	{
+		"brand_id" : 28,
+		"name" : "Therabody",
+		"country" : "Estados Unidos",
+		"website" : "https:\/\/therabody.com"
+	},
+	{
+		"brand_id" : 29,
+		"name" : "VeinLite",
+		"country" : "Estados Unidos",
+		"website" : "https:\/\/veinlite.com"
+	}
+]}

@@ -1,0 +1,203 @@
+{
+"store": [
+	{
+		"store_id" : 1,
+		"name" : "Store Retiro",
+		"address" : "Calle Alcalá 85",
+		"city" : "Madrid",
+		"postal_code" : "28009",
+		"latitude" : 40.421400,
+		"longitude" : -3.674000,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 2,
+		"name" : "Store Salamanca",
+		"address" : "Calle Goya 45",
+		"city" : "Madrid",
+		"postal_code" : "28001",
+		"latitude" : 40.425200,
+		"longitude" : -3.683700,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 3,
+		"name" : "Store Chamartín",
+		"address" : "Calle Serrano 210",
+		"city" : "Madrid",
+		"postal_code" : "28016",
+		"latitude" : 40.458200,
+		"longitude" : -3.684000,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 4,
+		"name" : "Store La Latina",
+		"address" : "Cava Baja 25",
+		"city" : "Madrid",
+		"postal_code" : "28005",
+		"latitude" : 40.411200,
+		"longitude" : -3.708300,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 5,
+		"name" : "Store Sol",
+		"address" : "Puerta del Sol 3",
+		"city" : "Madrid",
+		"postal_code" : "28013",
+		"latitude" : 40.416800,
+		"longitude" : -3.703800,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 6,
+		"name" : "Store Moncloa",
+		"address" : "Calle Princesa 90",
+		"city" : "Madrid",
+		"postal_code" : "28008",
+		"latitude" : 40.431000,
+		"longitude" : -3.719000,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 7,
+		"name" : "Store Atocha",
+		"address" : "Atocha 73",
+		"city" : "Madrid",
+		"postal_code" : "28012",
+		"latitude" : 40.407500,
+		"longitude" : -3.689100,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 8,
+		"name" : "Store Vallecas",
+		"address" : "Av. de la Albufera 100",
+		"city" : "Madrid",
+		"postal_code" : "28018",
+		"latitude" : 40.387100,
+		"longitude" : -3.656600,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 9,
+		"name" : "Store Usera",
+		"address" : "Av. Rafaela Ybarra 45",
+		"city" : "Madrid",
+		"postal_code" : "28026",
+		"latitude" : 40.381800,
+		"longitude" : -3.709300,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 10,
+		"name" : "Store Carabanchel",
+		"address" : "Calle General Ricardos 120",
+		"city" : "Madrid",
+		"postal_code" : "28019",
+		"latitude" : 40.389900,
+		"longitude" : -3.723200,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 11,
+		"name" : "Store Hortaleza",
+		"address" : "Calle López de Hoyos 430",
+		"city" : "Madrid",
+		"postal_code" : "28043",
+		"latitude" : 40.467500,
+		"longitude" : -3.639300,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 12,
+		"name" : "Store Moratalaz",
+		"address" : "Calle Camino de Vinateros 45",
+		"city" : "Madrid",
+		"postal_code" : "28030",
+		"latitude" : 40.407900,
+		"longitude" : -3.646000,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 13,
+		"name" : "Store San Blas",
+		"address" : "Av. Arcentales 25",
+		"city" : "Madrid",
+		"postal_code" : "28022",
+		"latitude" : 40.436300,
+		"longitude" : -3.612300,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 14,
+		"name" : "Store Barajas",
+		"address" : "Calle Galeón 25",
+		"city" : "Madrid",
+		"postal_code" : "28042",
+		"latitude" : 40.452200,
+		"longitude" : -3.577800,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 15,
+		"name" : "Store Chamberí",
+		"address" : "Calle Fuencarral 120",
+		"city" : "Madrid",
+		"postal_code" : "28010",
+		"latitude" : 40.430000,
+		"longitude" : -3.702300,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 16,
+		"name" : "Store Tetuán",
+		"address" : "Calle Bravo Murillo 200",
+		"city" : "Madrid",
+		"postal_code" : "28020",
+		"latitude" : 40.459800,
+		"longitude" : -3.698800,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 17,
+		"name" : "Store Arganzuela",
+		"address" : "Paseo de Yeserías 35",
+		"city" : "Madrid",
+		"postal_code" : "28005",
+		"latitude" : 40.400200,
+		"longitude" : -3.709600,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 18,
+		"name" : "Store Vicálvaro",
+		"address" : "Calle Minerva 10",
+		"city" : "Madrid",
+		"postal_code" : "28032",
+		"latitude" : 40.402300,
+		"longitude" : -3.601800,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 19,
+		"name" : "Store Ciudad Lineal",
+		"address" : "Calle Arturo Soria 120",
+		"city" : "Madrid",
+		"postal_code" : "28043",
+		"latitude" : 40.445100,
+		"longitude" : -3.654000,
+		"opened_date" : "2026-04-04"
+	},
+	{
+		"store_id" : 20,
+		"name" : "Store Fuencarral",
+		"address" : "Av. Monforte de Lemos 50",
+		"city" : "Madrid",
+		"postal_code" : "28029",
+		"latitude" : 40.477200,
+		"longitude" : -3.708100,
+		"opened_date" : "2026-04-04"
+	}
+]}

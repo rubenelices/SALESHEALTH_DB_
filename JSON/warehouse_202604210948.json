@@ -1,0 +1,12 @@
+{
+"warehouse": [
+	{
+		"warehouse_id" : 1,
+		"name" : "Almacén Central Madrid",
+		"address" : "Calle del Haya 4",
+		"city" : "Madrid",
+		"postal_code" : "28044",
+		"latitude" : 40.367878,
+		"longitude" : -3.747349
+	}
+]}

@@ -1,0 +1,403 @@
+{
+"product": [
+	{
+		"product_id" : 1,
+		"name" : "Tensiómetro digital",
+		"category" : "Diagnóstico",
+		"manufacturer" : "Omron",
+		"price" : 59.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 2,
+		"name" : "Oxímetro de pulso",
+		"category" : "Diagnóstico",
+		"manufacturer" : "Beurer",
+		"price" : 29.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 3,
+		"name" : "Termómetro infrarrojo",
+		"category" : "Diagnóstico",
+		"manufacturer" : "Medisana",
+		"price" : 24.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 4,
+		"name" : "Báscula inteligente",
+		"category" : "Wellness",
+		"manufacturer" : "Xiaomi",
+		"price" : 34.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 5,
+		"name" : "Monitor de glucosa",
+		"category" : "Diagnóstico",
+		"manufacturer" : "Abbott",
+		"price" : 79.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 6,
+		"name" : "Cepillo dental sónico",
+		"category" : "Higiene",
+		"manufacturer" : "Oral-B",
+		"price" : 49.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 7,
+		"name" : "Purificador de aire",
+		"category" : "Wellness",
+		"manufacturer" : "Philips",
+		"price" : 149.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 8,
+		"name" : "Lámpara UV desinfectante",
+		"category" : "Higiene",
+		"manufacturer" : "Xiaomi",
+		"price" : 39.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 9,
+		"name" : "Nebulizador ultrasónico",
+		"category" : "Tratamiento",
+		"manufacturer" : "Omron",
+		"price" : 69.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 10,
+		"name" : "Tiras reactivas glucosa (pack)",
+		"category" : "Diagnóstico",
+		"manufacturer" : "Abbott",
+		"price" : 19.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 11,
+		"name" : "Masajeador cervical",
+		"category" : "Wellness",
+		"manufacturer" : "Naipo",
+		"price" : 89.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 12,
+		"name" : "Electroestimulador muscular",
+		"category" : "Rehabilitación",
+		"manufacturer" : "Compex",
+		"price" : 149.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 13,
+		"name" : "Monitor ECG portátil",
+		"category" : "Diagnóstico",
+		"manufacturer" : "AliveCor",
+		"price" : 129.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 14,
+		"name" : "Colchón antiescaras",
+		"category" : "Rehabilitación",
+		"manufacturer" : "Invacare",
+		"price" : 199.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 15,
+		"name" : "Lámpara de fototerapia",
+		"category" : "Wellness",
+		"manufacturer" : "Beurer",
+		"price" : 89.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 16,
+		"name" : "Depurador de aire portátil",
+		"category" : "Wellness",
+		"manufacturer" : "Rowenta",
+		"price" : 99.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 17,
+		"name" : "Silla de ruedas plegable",
+		"category" : "Movilidad",
+		"manufacturer" : "Sunrise Medical",
+		"price" : 299.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 18,
+		"name" : "Andador ligero",
+		"category" : "Movilidad",
+		"manufacturer" : "Invacare",
+		"price" : 129.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 19,
+		"name" : "Muletas ergonómicas",
+		"category" : "Movilidad",
+		"manufacturer" : "Ortones",
+		"price" : 39.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 20,
+		"name" : "Terapia frío\/calor",
+		"category" : "Rehabilitación",
+		"manufacturer" : "Thermoval",
+		"price" : 25.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 21,
+		"name" : "Tensiómetro de muñeca",
+		"category" : "Diagnóstico",
+		"manufacturer" : "Omron",
+		"price" : 49.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 22,
+		"name" : "Monitor fetal portátil",
+		"category" : "Diagnóstico",
+		"manufacturer" : "Sonoline",
+		"price" : 79.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 23,
+		"name" : "Lámpara dermatológica UV",
+		"category" : "Tratamiento",
+		"manufacturer" : "Philips",
+		"price" : 119.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 24,
+		"name" : "Colchoneta vibratoria",
+		"category" : "Wellness",
+		"manufacturer" : "Medisana",
+		"price" : 99.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 25,
+		"name" : "Electrocardiógrafo portátil",
+		"category" : "Diagnóstico",
+		"manufacturer" : "Viatom",
+		"price" : 159.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 26,
+		"name" : "Dispensador automático gel",
+		"category" : "Higiene",
+		"manufacturer" : "Xiaomi",
+		"price" : 24.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 27,
+		"name" : "Masajeador de pies Shiatsu",
+		"category" : "Wellness",
+		"manufacturer" : "Naipo",
+		"price" : 129.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 28,
+		"name" : "Terapia TENS portátil",
+		"category" : "Rehabilitación",
+		"manufacturer" : "Beurer",
+		"price" : 59.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 29,
+		"name" : "Sensor temperatura inteligente",
+		"category" : "Domótica Salud",
+		"manufacturer" : "Xiaomi",
+		"price" : 19.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 30,
+		"name" : "Monitor sueño portátil",
+		"category" : "Wellness",
+		"manufacturer" : "Withings",
+		"price" : 99.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 31,
+		"name" : "Báscula profesional médica",
+		"category" : "Diagnóstico",
+		"manufacturer" : "Seca",
+		"price" : 249.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 32,
+		"name" : "Nebulizador pediátrico",
+		"category" : "Tratamiento",
+		"manufacturer" : "Omron",
+		"price" : 54.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 33,
+		"name" : "Purificador HEPA Pro",
+		"category" : "Wellness",
+		"manufacturer" : "Dyson",
+		"price" : 349.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 34,
+		"name" : "Silla ortopédica ajustable",
+		"category" : "Movilidad",
+		"manufacturer" : "Invacare",
+		"price" : 199.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 35,
+		"name" : "Bastón inteligente",
+		"category" : "Movilidad",
+		"manufacturer" : "Ortones",
+		"price" : 59.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 36,
+		"name" : "Corrector postura electrónico",
+		"category" : "Wellness",
+		"manufacturer" : "BackFix",
+		"price" : 39.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 37,
+		"name" : "Lámpara terapéutica SAD",
+		"category" : "Wellness",
+		"manufacturer" : "Lumie",
+		"price" : 129.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 38,
+		"name" : "Análisis corporal avanzado",
+		"category" : "Wellness",
+		"manufacturer" : "Tanita",
+		"price" : 189.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 39,
+		"name" : "Tensiómetro profesional",
+		"category" : "Diagnóstico",
+		"manufacturer" : "Microlife",
+		"price" : 119.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 40,
+		"name" : "Corrector dental eléctrico",
+		"category" : "Higiene",
+		"manufacturer" : "Oral-B",
+		"price" : 89.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 41,
+		"name" : "Kit de oxigenoterapia",
+		"category" : "Tratamiento",
+		"manufacturer" : "Oxycare",
+		"price" : 249.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 42,
+		"name" : "Monitor respiratorio",
+		"category" : "Diagnóstico",
+		"manufacturer" : "RespiPro",
+		"price" : 139.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 43,
+		"name" : "Colchón ortopédico premium",
+		"category" : "Rehabilitación",
+		"manufacturer" : "Invacare",
+		"price" : 299.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 44,
+		"name" : "Masajeador de manos",
+		"category" : "Wellness",
+		"manufacturer" : "Therabody",
+		"price" : 149.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 45,
+		"name" : "Scanner venoso portátil",
+		"category" : "Diagnóstico",
+		"manufacturer" : "VeinLite",
+		"price" : 399.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 46,
+		"name" : "Detector apnea portátil",
+		"category" : "Diagnóstico",
+		"manufacturer" : "Withings",
+		"price" : 179.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 47,
+		"name" : "Lámpara infrarroja terapéutica",
+		"category" : "Tratamiento",
+		"manufacturer" : "Beurer",
+		"price" : 69.90,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 48,
+		"name" : "Corrector lumbares calefactable",
+		"category" : "Wellness",
+		"manufacturer" : "Thermoval",
+		"price" : 49.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 49,
+		"name" : "Sonda de electroestimulación",
+		"category" : "Rehabilitación",
+		"manufacturer" : "Compex",
+		"price" : 79.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	},
+	{
+		"product_id" : 50,
+		"name" : "Camilla plegable portátil",
+		"category" : "Rehabilitación",
+		"manufacturer" : "Fisioclinic",
+		"price" : 159.99,
+		"created_at" : "2026-04-04T09:23:48.591Z"
+	}
+]}

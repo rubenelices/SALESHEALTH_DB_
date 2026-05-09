@@ -1,0 +1,33 @@
+{
+"category": [
+	{
+		"category_id" : 1,
+		"name" : "Diagnóstico",
+		"description" : "Productos de medición y monitoreo."
+	},
+	{
+		"category_id" : 2,
+		"name" : "Wellness",
+		"description" : "Productos de bienestar y salud general."
+	},
+	{
+		"category_id" : 3,
+		"name" : "Movilidad",
+		"description" : "Productos de apoyo a movilidad."
+	},
+	{
+		"category_id" : 4,
+		"name" : "Rehabilitación",
+		"description" : "Equipos de recuperación y fisioterapia."
+	},
+	{
+		"category_id" : 5,
+		"name" : "Higiene",
+		"description" : "Equipos y dispositivos sanitarios."
+	},
+	{
+		"category_id" : 6,
+		"name" : "Tratamiento",
+		"description" : "Productos y equipos para tratamientos específicos"
+	}
+]}

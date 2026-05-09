@@ -1,0 +1,493 @@
+{
+"central_product": [
+	{
+		"product_id" : 46,
+		"name" : "Detector apnea portátil",
+		"category_id" : 1,
+		"brand_id" : 21,
+		"sku" : "SKU-46",
+		"barcode" : "BC-46",
+		"unit_cost" : 107.99,
+		"unit_price" : 179.99
+	},
+	{
+		"product_id" : 45,
+		"name" : "Scanner venoso portátil",
+		"category_id" : 1,
+		"brand_id" : 29,
+		"sku" : "SKU-45",
+		"barcode" : "BC-45",
+		"unit_cost" : 239.99,
+		"unit_price" : 399.99
+	},
+	{
+		"product_id" : 42,
+		"name" : "Monitor respiratorio",
+		"category_id" : 1,
+		"brand_id" : 27,
+		"sku" : "SKU-42",
+		"barcode" : "BC-42",
+		"unit_cost" : 83.99,
+		"unit_price" : 139.99
+	},
+	{
+		"product_id" : 39,
+		"name" : "Tensiómetro profesional",
+		"category_id" : 1,
+		"brand_id" : 25,
+		"sku" : "SKU-39",
+		"barcode" : "BC-39",
+		"unit_cost" : 71.99,
+		"unit_price" : 119.99
+	},
+	{
+		"product_id" : 31,
+		"name" : "Báscula profesional médica",
+		"category_id" : 1,
+		"brand_id" : 23,
+		"sku" : "SKU-31",
+		"barcode" : "BC-31",
+		"unit_cost" : 149.99,
+		"unit_price" : 249.99
+	},
+	{
+		"product_id" : 25,
+		"name" : "Electrocardiógrafo portátil",
+		"category_id" : 1,
+		"brand_id" : 16,
+		"sku" : "SKU-25",
+		"barcode" : "BC-25",
+		"unit_cost" : 95.99,
+		"unit_price" : 159.99
+	},
+	{
+		"product_id" : 22,
+		"name" : "Monitor fetal portátil",
+		"category_id" : 1,
+		"brand_id" : 22,
+		"sku" : "SKU-22",
+		"barcode" : "BC-22",
+		"unit_cost" : 47.99,
+		"unit_price" : 79.99
+	},
+	{
+		"product_id" : 21,
+		"name" : "Tensiómetro de muñeca",
+		"category_id" : 1,
+		"brand_id" : 1,
+		"sku" : "SKU-21",
+		"barcode" : "BC-21",
+		"unit_cost" : 29.99,
+		"unit_price" : 49.99
+	},
+	{
+		"product_id" : 13,
+		"name" : "Monitor ECG portátil",
+		"category_id" : 1,
+		"brand_id" : 10,
+		"sku" : "SKU-13",
+		"barcode" : "BC-13",
+		"unit_cost" : 77.99,
+		"unit_price" : 129.99
+	},
+	{
+		"product_id" : 10,
+		"name" : "Tiras reactivas glucosa (pack)",
+		"category_id" : 1,
+		"brand_id" : 5,
+		"sku" : "SKU-10",
+		"barcode" : "BC-10",
+		"unit_cost" : 11.99,
+		"unit_price" : 19.99
+	},
+	{
+		"product_id" : 5,
+		"name" : "Monitor de glucosa",
+		"category_id" : 1,
+		"brand_id" : 5,
+		"sku" : "SKU-5",
+		"barcode" : "BC-5",
+		"unit_cost" : 47.99,
+		"unit_price" : 79.99
+	},
+	{
+		"product_id" : 3,
+		"name" : "Termómetro infrarrojo",
+		"category_id" : 1,
+		"brand_id" : 3,
+		"sku" : "SKU-3",
+		"barcode" : "BC-3",
+		"unit_cost" : 14.94,
+		"unit_price" : 24.90
+	},
+	{
+		"product_id" : 2,
+		"name" : "Oxímetro de pulso",
+		"category_id" : 1,
+		"brand_id" : 2,
+		"sku" : "SKU-2",
+		"barcode" : "BC-2",
+		"unit_cost" : 17.99,
+		"unit_price" : 29.99
+	},
+	{
+		"product_id" : 1,
+		"name" : "Tensiómetro digital",
+		"category_id" : 1,
+		"brand_id" : 1,
+		"sku" : "SKU-1",
+		"barcode" : "BC-1",
+		"unit_cost" : 35.99,
+		"unit_price" : 59.99
+	},
+	{
+		"product_id" : 48,
+		"name" : "Corrector lumbares calefactable",
+		"category_id" : 2,
+		"brand_id" : 13,
+		"sku" : "SKU-48",
+		"barcode" : "BC-48",
+		"unit_cost" : 29.99,
+		"unit_price" : 49.99
+	},
+	{
+		"product_id" : 44,
+		"name" : "Masajeador de manos",
+		"category_id" : 2,
+		"brand_id" : 28,
+		"sku" : "SKU-44",
+		"barcode" : "BC-44",
+		"unit_cost" : 89.99,
+		"unit_price" : 149.99
+	},
+	{
+		"product_id" : 38,
+		"name" : "Análisis corporal avanzado",
+		"category_id" : 2,
+		"brand_id" : 18,
+		"sku" : "SKU-38",
+		"barcode" : "BC-38",
+		"unit_cost" : 113.99,
+		"unit_price" : 189.99
+	},
+	{
+		"product_id" : 37,
+		"name" : "Lámpara terapéutica SAD",
+		"category_id" : 2,
+		"brand_id" : 24,
+		"sku" : "SKU-37",
+		"barcode" : "BC-37",
+		"unit_cost" : 77.99,
+		"unit_price" : 129.99
+	},
+	{
+		"product_id" : 36,
+		"name" : "Corrector postura electrónico",
+		"category_id" : 2,
+		"brand_id" : 17,
+		"sku" : "SKU-36",
+		"barcode" : "BC-36",
+		"unit_cost" : 23.99,
+		"unit_price" : 39.99
+	},
+	{
+		"product_id" : 33,
+		"name" : "Purificador HEPA Pro",
+		"category_id" : 2,
+		"brand_id" : 19,
+		"sku" : "SKU-33",
+		"barcode" : "BC-33",
+		"unit_cost" : 209.99,
+		"unit_price" : 349.99
+	},
+	{
+		"product_id" : 30,
+		"name" : "Monitor sueño portátil",
+		"category_id" : 2,
+		"brand_id" : 21,
+		"sku" : "SKU-30",
+		"barcode" : "BC-30",
+		"unit_cost" : 59.94,
+		"unit_price" : 99.90
+	},
+	{
+		"product_id" : 27,
+		"name" : "Masajeador de pies Shiatsu",
+		"category_id" : 2,
+		"brand_id" : 8,
+		"sku" : "SKU-27",
+		"barcode" : "BC-27",
+		"unit_cost" : 77.94,
+		"unit_price" : 129.90
+	},
+	{
+		"product_id" : 24,
+		"name" : "Colchoneta vibratoria",
+		"category_id" : 2,
+		"brand_id" : 3,
+		"sku" : "SKU-24",
+		"barcode" : "BC-24",
+		"unit_cost" : 59.99,
+		"unit_price" : 99.99
+	},
+	{
+		"product_id" : 16,
+		"name" : "Depurador de aire portátil",
+		"category_id" : 2,
+		"brand_id" : 12,
+		"sku" : "SKU-16",
+		"barcode" : "BC-16",
+		"unit_cost" : 59.94,
+		"unit_price" : 99.90
+	},
+	{
+		"product_id" : 15,
+		"name" : "Lámpara de fototerapia",
+		"category_id" : 2,
+		"brand_id" : 2,
+		"sku" : "SKU-15",
+		"barcode" : "BC-15",
+		"unit_cost" : 53.94,
+		"unit_price" : 89.90
+	},
+	{
+		"product_id" : 11,
+		"name" : "Masajeador cervical",
+		"category_id" : 2,
+		"brand_id" : 8,
+		"sku" : "SKU-11",
+		"barcode" : "BC-11",
+		"unit_cost" : 53.99,
+		"unit_price" : 89.99
+	},
+	{
+		"product_id" : 7,
+		"name" : "Purificador de aire",
+		"category_id" : 2,
+		"brand_id" : 7,
+		"sku" : "SKU-7",
+		"barcode" : "BC-7",
+		"unit_cost" : 89.99,
+		"unit_price" : 149.99
+	},
+	{
+		"product_id" : 4,
+		"name" : "Báscula inteligente",
+		"category_id" : 2,
+		"brand_id" : 4,
+		"sku" : "SKU-4",
+		"barcode" : "BC-4",
+		"unit_cost" : 20.99,
+		"unit_price" : 34.99
+	},
+	{
+		"product_id" : 35,
+		"name" : "Bastón inteligente",
+		"category_id" : 3,
+		"brand_id" : 15,
+		"sku" : "SKU-35",
+		"barcode" : "BC-35",
+		"unit_cost" : 35.99,
+		"unit_price" : 59.99
+	},
+	{
+		"product_id" : 34,
+		"name" : "Silla ortopédica ajustable",
+		"category_id" : 3,
+		"brand_id" : 11,
+		"sku" : "SKU-34",
+		"barcode" : "BC-34",
+		"unit_cost" : 119.99,
+		"unit_price" : 199.99
+	},
+	{
+		"product_id" : 19,
+		"name" : "Muletas ergonómicas",
+		"category_id" : 3,
+		"brand_id" : 15,
+		"sku" : "SKU-19",
+		"barcode" : "BC-19",
+		"unit_cost" : 23.94,
+		"unit_price" : 39.90
+	},
+	{
+		"product_id" : 18,
+		"name" : "Andador ligero",
+		"category_id" : 3,
+		"brand_id" : 11,
+		"sku" : "SKU-18",
+		"barcode" : "BC-18",
+		"unit_cost" : 77.94,
+		"unit_price" : 129.90
+	},
+	{
+		"product_id" : 17,
+		"name" : "Silla de ruedas plegable",
+		"category_id" : 3,
+		"brand_id" : 14,
+		"sku" : "SKU-17",
+		"barcode" : "BC-17",
+		"unit_cost" : 179.99,
+		"unit_price" : 299.99
+	},
+	{
+		"product_id" : 50,
+		"name" : "Camilla plegable portátil",
+		"category_id" : 4,
+		"brand_id" : 20,
+		"sku" : "SKU-50",
+		"barcode" : "BC-50",
+		"unit_cost" : 95.99,
+		"unit_price" : 159.99
+	},
+	{
+		"product_id" : 49,
+		"name" : "Sonda de electroestimulación",
+		"category_id" : 4,
+		"brand_id" : 9,
+		"sku" : "SKU-49",
+		"barcode" : "BC-49",
+		"unit_cost" : 47.99,
+		"unit_price" : 79.99
+	},
+	{
+		"product_id" : 43,
+		"name" : "Colchón ortopédico premium",
+		"category_id" : 4,
+		"brand_id" : 11,
+		"sku" : "SKU-43",
+		"barcode" : "BC-43",
+		"unit_cost" : 179.99,
+		"unit_price" : 299.99
+	},
+	{
+		"product_id" : 28,
+		"name" : "Terapia TENS portátil",
+		"category_id" : 4,
+		"brand_id" : 2,
+		"sku" : "SKU-28",
+		"barcode" : "BC-28",
+		"unit_cost" : 35.99,
+		"unit_price" : 59.99
+	},
+	{
+		"product_id" : 20,
+		"name" : "Terapia frío\/calor",
+		"category_id" : 4,
+		"brand_id" : 13,
+		"sku" : "SKU-20",
+		"barcode" : "BC-20",
+		"unit_cost" : 15.59,
+		"unit_price" : 25.99
+	},
+	{
+		"product_id" : 14,
+		"name" : "Colchón antiescaras",
+		"category_id" : 4,
+		"brand_id" : 11,
+		"sku" : "SKU-14",
+		"barcode" : "BC-14",
+		"unit_cost" : 119.94,
+		"unit_price" : 199.90
+	},
+	{
+		"product_id" : 12,
+		"name" : "Electroestimulador muscular",
+		"category_id" : 4,
+		"brand_id" : 9,
+		"sku" : "SKU-12",
+		"barcode" : "BC-12",
+		"unit_cost" : 89.94,
+		"unit_price" : 149.90
+	},
+	{
+		"product_id" : 40,
+		"name" : "Corrector dental eléctrico",
+		"category_id" : 5,
+		"brand_id" : 6,
+		"sku" : "SKU-40",
+		"barcode" : "BC-40",
+		"unit_cost" : 53.99,
+		"unit_price" : 89.99
+	},
+	{
+		"product_id" : 26,
+		"name" : "Dispensador automático gel",
+		"category_id" : 5,
+		"brand_id" : 4,
+		"sku" : "SKU-26",
+		"barcode" : "BC-26",
+		"unit_cost" : 14.99,
+		"unit_price" : 24.99
+	},
+	{
+		"product_id" : 8,
+		"name" : "Lámpara UV desinfectante",
+		"category_id" : 5,
+		"brand_id" : 4,
+		"sku" : "SKU-8",
+		"barcode" : "BC-8",
+		"unit_cost" : 23.94,
+		"unit_price" : 39.90
+	},
+	{
+		"product_id" : 6,
+		"name" : "Cepillo dental sónico",
+		"category_id" : 5,
+		"brand_id" : 6,
+		"sku" : "SKU-6",
+		"barcode" : "BC-6",
+		"unit_cost" : 29.94,
+		"unit_price" : 49.90
+	},
+	{
+		"product_id" : 47,
+		"name" : "Lámpara infrarroja terapéutica",
+		"category_id" : 6,
+		"brand_id" : 2,
+		"sku" : "SKU-47",
+		"barcode" : "BC-47",
+		"unit_cost" : 41.94,
+		"unit_price" : 69.90
+	},
+	{
+		"product_id" : 41,
+		"name" : "Kit de oxigenoterapia",
+		"category_id" : 6,
+		"brand_id" : 26,
+		"sku" : "SKU-41",
+		"barcode" : "BC-41",
+		"unit_cost" : 149.99,
+		"unit_price" : 249.99
+	},
+	{
+		"product_id" : 32,
+		"name" : "Nebulizador pediátrico",
+		"category_id" : 6,
+		"brand_id" : 1,
+		"sku" : "SKU-32",
+		"barcode" : "BC-32",
+		"unit_cost" : 32.94,
+		"unit_price" : 54.90
+	},
+	{
+		"product_id" : 23,
+		"name" : "Lámpara dermatológica UV",
+		"category_id" : 6,
+		"brand_id" : 7,
+		"sku" : "SKU-23",
+		"barcode" : "BC-23",
+		"unit_cost" : 71.94,
+		"unit_price" : 119.90
+	},
+	{
+		"product_id" : 9,
+		"name" : "Nebulizador ultrasónico",
+		"category_id" : 6,
+		"brand_id" : 1,
+		"sku" : "SKU-9",
+		"barcode" : "BC-9",
+		"unit_cost" : 41.99,
+		"unit_price" : 69.99
+	}
+]}

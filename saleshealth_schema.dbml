@@ -1,0 +1,173 @@
+// ============================================================
+// Base de datos: saleshealth (OLTP)
+// Proyecto Final – Gestión de Datos (UAX)
+// ============================================================
+
+// ─── CLIENTES ────────────────────────────────────────────────
+
+Table customer {
+  customer_id  integer     [pk, increment, note: 'Identificador único del cliente']
+  first_name   varchar(100) [not null, note: 'Nombre']
+  last_name    varchar(100) [not null, note: 'Primer apellido']
+  last_name2   varchar(100) [note: 'Segundo apellido']
+  email        varchar(150) [note: 'Email de contacto']
+  phone        varchar(20) [note: 'Teléfono de contacto']
+  created_at   timestamp   [default: `now()`, note: 'Fecha de alta en el sistema']
+}
+
+// ─── VENTAS ──────────────────────────────────────────────────
+
+Table sale {
+  sale_id     integer      [pk, increment]
+  customer_id integer      [not null, ref: > customer.customer_id, note: 'Cliente que realizó la compra']
+  store_id    integer      [not null, ref: > store.store_id,    note: 'Tienda donde se realizó la venta']
+  sale_date   timestamp    [not null, note: 'Fecha y hora de la venta']
+  total       numeric(10,2) [note: 'Importe total de la venta']
+}
+
+Table sale_item {
+  sale_item_id integer      [pk, increment]
+  sale_id      integer      [not null, ref: > sale.sale_id,    note: 'Venta a la que pertenece esta línea']
+  product_id   integer      [not null, ref: > product.product_id, note: 'Producto vendido']
+  quantity     integer      [not null, note: 'Unidades vendidas']
+  unit_price   numeric(10,2) [not null, note: 'Precio unitario en el momento de la venta']
+  offer_id     integer      [ref: > offer.offer_id,            note: 'Oferta aplicada (nullable)']
+  subtotal     numeric(10,2) [not null, note: 'quantity × unit_price con descuento aplicado']
+}
+
+// ─── PRODUCTOS ───────────────────────────────────────────────
+
+Table product {
+  product_id   integer      [pk, increment]
+  name         varchar(200) [not null, note: 'Nombre del producto']
+  category     varchar(100) [note: 'Categoría (texto libre)']
+  manufacturer varchar(150) [note: 'Fabricante']
+  price        numeric(10,2) [not null, note: 'Precio de venta en tienda']
+  created_at   timestamp    [default: `now()`]
+}
+
+Table central_product {
+  product_id   integer      [pk, increment, note: 'ID en el catálogo central (no coincide con product.product_id)']
+  name         varchar(200) [not null]
+  category_id  integer      [not null, ref: > category.category_id]
+  brand_id     integer      [not null, ref: > brand.brand_id]
+  sku          varchar(50)  [note: 'Código de referencia interno']
+  barcode      varchar(50)  [note: 'Código de barras']
+  unit_cost    numeric(10,2) [note: 'Coste unitario de compra']
+  unit_price   numeric(10,2) [note: 'Precio de venta sugerido']
+}
+
+Table brand {
+  brand_id integer      [pk, increment]
+  name     varchar(150) [not null]
+  country  varchar(100)
+  website  varchar(200)
+}
+
+Table category {
+  category_id integer [pk, increment]
+  name        varchar(100) [not null]
+  description text
+}
+
+// ─── OFERTAS ─────────────────────────────────────────────────
+
+Table offer {
+  offer_id         integer      [pk, increment]
+  name             varchar(150)
+  description      text
+  discount_percent numeric(5,2) [note: 'Porcentaje de descuento (ej: 10.00 = 10%)']
+  start_date       date         [not null]
+  end_date         date         [not null]
+}
+
+Table product_offer {
+  product_id integer [not null, ref: > product.product_id]
+  offer_id   integer [not null, ref: > offer.offer_id]
+
+  indexes {
+    (product_id, offer_id) [pk]
+  }
+}
+
+// ─── DEVOLUCIONES ────────────────────────────────────────────
+
+Table return_item {
+  return_id    integer   [pk, increment]
+  sale_item_id integer   [not null, ref: > sale_item.sale_item_id, note: 'Línea de venta devuelta']
+  return_date  timestamp [not null]
+  quantity     integer   [not null, note: 'Unidades devueltas']
+  reason_id    integer   [not null, ref: > return_reason.reason_id]
+}
+
+Table return_reason {
+  reason_id integer [pk, increment]
+  reason    text    [note: 'Descripción del motivo']
+  active    boolean [default: true]
+}
+
+// ─── TIENDAS ─────────────────────────────────────────────────
+
+Table store {
+  store_id    integer      [pk, increment]
+  name        varchar(100) [not null]
+  address     varchar(200)
+  city        varchar(100) [default: 'Madrid']
+  postal_code varchar(10)  [ref: > city_zone.postal_code, note: 'Código postal → zona geográfica']
+  latitude    numeric(9,6)
+  longitude   numeric(9,6)
+  opened_date date         [default: `now()`]
+}
+
+// ─── GEOGRAFÍA ───────────────────────────────────────────────
+
+Table city_zone {
+  postal_code      varchar(5)  [pk]
+  district         varchar(100) [not null, note: 'Barrio o distrito de Madrid']
+  area_type        varchar(20) [note: 'Céntrica o Periférica']
+  zone_orientation varchar(20) [note: 'Centro / Norte / Sur / Este / Oeste / ...']
+  city_code        varchar(3)  [default: '28']
+  city             varchar(100) [default: 'Madrid']
+}
+
+// ─── INVENTARIO EN TIENDA ────────────────────────────────────
+
+Table inventory {
+  inventory_id integer   [pk, increment]
+  store_id     integer   [not null, ref: > store.store_id]
+  product_id   integer   [not null, ref: > product.product_id]
+  stock        integer   [note: 'Unidades disponibles en tienda']
+  last_update  timestamp [default: `now()`]
+}
+
+// ─── ALMACENES ───────────────────────────────────────────────
+
+Table warehouse {
+  warehouse_id integer      [pk, increment]
+  name         varchar(150) [not null]
+  address      varchar(200)
+  city         varchar(100)
+  postal_code  varchar(10)  [ref: > city_zone.postal_code]
+  latitude     numeric(9,6)
+  longitude    numeric(9,6)
+}
+
+Table warehouse_location {
+  location_id  integer    [pk, increment]
+  warehouse_id integer    [not null, ref: > warehouse.warehouse_id]
+  zone         varchar(50) [note: 'Zona del almacén (ej: A, B, C)']
+  aisle        varchar(10) [note: 'Pasillo']
+  shelf        varchar(10) [note: 'Estantería']
+  bin_code     varchar(10) [note: 'Código de ubicación exacta']
+}
+
+Table central_inventory {
+  inventory_id integer   [pk, increment]
+  warehouse_id integer   [not null, ref: > warehouse.warehouse_id]
+  location_id  integer   [not null, ref: > warehouse_location.location_id]
+  product_id   integer   [not null, ref: > central_product.product_id]
+  quantity     integer   [not null, default: 0]
+  min_stock    integer   [default: 0, note: 'Stock mínimo antes de reponer']
+  max_stock    integer   [default: 0, note: 'Capacidad máxima del hueco']
+  last_update  timestamp [default: `now()`]
+}

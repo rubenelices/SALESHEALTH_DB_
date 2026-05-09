@@ -1,0 +1,27 @@
+{
+"product_offer": [
+	{
+		"product_id" : 1,
+		"offer_id" : 1
+	},
+	{
+		"product_id" : 2,
+		"offer_id" : 1
+	},
+	{
+		"product_id" : 3,
+		"offer_id" : 1
+	},
+	{
+		"product_id" : 5,
+		"offer_id" : 1
+	},
+	{
+		"product_id" : 15,
+		"offer_id" : 1
+	},
+	{
+		"product_id" : 30,
+		"offer_id" : 1
+	}
+]}

@@ -1,0 +1,33 @@
+{
+"return_reason": [
+	{
+		"reason_id" : 1,
+		"reason" : "No cumple expectativas",
+		"active" : true
+	},
+	{
+		"reason_id" : 2,
+		"reason" : "Producto defectuoso",
+		"active" : true
+	},
+	{
+		"reason_id" : 3,
+		"reason" : "Error en el pedido",
+		"active" : true
+	},
+	{
+		"reason_id" : 4,
+		"reason" : "Problema de funcionamiento",
+		"active" : true
+	},
+	{
+		"reason_id" : 5,
+		"reason" : "Cliente arrepentido",
+		"active" : true
+	},
+	{
+		"reason_id" : 6,
+		"reason" : "Desconocida",
+		"active" : false
+	}
+]}

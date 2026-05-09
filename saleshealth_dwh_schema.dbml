@@ -1,0 +1,134 @@
+// ============================================================
+// Data Warehouse: saleshealth.dwh (modelo dimensional - estrella)
+// Proyecto Final – Gestión de Datos (UAX)
+//
+// 1 tabla de hechos (fact_sales) + 6 dimensiones
+// Granularidad del fact: una fila por línea de venta (sale_item)
+// ============================================================
+
+// ─── DIMENSIÓN TIEMPO ────────────────────────────────────────
+Table dim_date {
+  date_id      integer     [pk, note: 'Formato YYYYMMDD (ej: 20230415)']
+  date         date        [not null]
+  year         smallint    [not null]
+  quarter      smallint    [not null, note: '1 a 4']
+  month        smallint    [not null, note: '1 a 12']
+  month_name   varchar(20) [not null, note: 'Enero, Febrero...']
+  week         smallint    [not null, note: 'Semana del año (1-53)']
+  day_of_month smallint    [not null]
+  day_of_week  smallint    [not null, note: '1=Lunes, 7=Domingo']
+  day_name     varchar(20) [not null]
+  is_weekend   boolean     [not null]
+  is_month_end boolean     [not null]
+
+  Note: '2.191 filas (2020-01-01 a 2025-12-30)'
+}
+
+// ─── DIMENSIÓN CLIENTE ───────────────────────────────────────
+Table dim_customer {
+  customer_id         integer      [pk]
+  first_name          varchar(100) [not null]
+  last_name           varchar(100) [not null]
+  last_name2          varchar(100)
+  full_name           varchar(320) [not null, note: 'Nombre completo concatenado']
+  email               varchar(150)
+  phone               varchar(20)
+  created_at          timestamp
+  first_purchase_date date         [note: 'Calculado desde sale']
+  last_purchase_date  date         [note: 'Calculado desde sale']
+  customer_age_days   integer      [note: 'Días desde primera compra hasta 2025-12-30 (R_t del CLTV)']
+
+  Note: '5.750 filas. Imputaciones: nombre/apellido/email/phone si NULL.'
+}
+
+// ─── DIMENSIÓN PRODUCTO ──────────────────────────────────────
+Table dim_product {
+  product_id   integer       [pk]
+  name         varchar(200)  [not null]
+  category     varchar(100)
+  manufacturer varchar(150)
+  price        numeric(10,2) [not null, note: 'Precio de venta en tienda']
+  unit_cost    numeric(10,2) [note: 'Coste (de central_product, imputado si falta)']
+  margin_pct   numeric(6,2)  [note: '(price - unit_cost) / price * 100']
+  cost_imputed boolean       [default: false, note: 'true si el coste fue imputado']
+
+  Note: '50 filas (1 con coste imputado por mediana global)'
+}
+
+// ─── DIMENSIÓN TIENDA ────────────────────────────────────────
+Table dim_store {
+  store_id         integer      [pk]
+  name             varchar(100) [not null]
+  address          varchar(200)
+  city             varchar(100)
+  postal_code      varchar(10)
+  district         varchar(100) [note: 'De city_zone']
+  area_type        varchar(20)  [note: 'Céntrica / Periférica']
+  zone_orientation varchar(20)  [note: 'Norte / Sur / Centro...']
+  latitude         numeric(9,6)
+  longitude        numeric(9,6)
+  opened_date      date
+
+  Note: '20 filas (todas en Madrid)'
+}
+
+// ─── DIMENSIÓN OFERTA ────────────────────────────────────────
+Table dim_offer {
+  offer_id         integer       [pk]
+  name             varchar(150)  [not null]
+  description      text
+  discount_percent numeric(5,2)  [default: 0]
+  start_date       date
+  end_date         date
+
+  Note: '2 filas. Incluye fila especial offer_id = -1 ("Sin oferta")'
+}
+
+// ─── DIMENSIÓN MOTIVO DEVOLUCIÓN ─────────────────────────────
+Table dim_return_reason {
+  reason_id integer [pk]
+  reason    text    [not null]
+  active    boolean [default: true]
+
+  Note: '7 filas. Incluye fila especial reason_id = -1 ("Sin devolución")'
+}
+
+// ─── TABLA DE HECHOS ─────────────────────────────────────────
+Table fact_sales {
+  sale_item_id    integer       [pk, note: 'PK natural desde sale_item']
+
+  // Claves foráneas a dimensiones
+  sale_id         integer       [not null, note: 'Cabecera de venta original (degenerated dimension)']
+  customer_id     integer       [not null, ref: > dim_customer.customer_id]
+  product_id      integer       [not null, ref: > dim_product.product_id]
+  store_id        integer       [not null, ref: > dim_store.store_id]
+  date_id         integer       [not null, ref: > dim_date.date_id]
+  offer_id        integer       [not null, default: -1, ref: > dim_offer.offer_id]
+  reason_id       integer       [not null, default: -1, ref: > dim_return_reason.reason_id]
+
+  // Métricas
+  quantity        integer       [not null]
+  unit_price      numeric(10,2) [not null, note: 'Precio pagado por unidad']
+  unit_cost       numeric(10,2) [note: 'Coste unitario (de dim_product)']
+  subtotal        numeric(10,2) [not null, note: 'Ingresos brutos (quantity * unit_price)']
+  discount_amount numeric(10,2) [default: 0, note: 'Descuento aplicado por oferta']
+  net_revenue     numeric(10,2) [note: 'subtotal - discount_amount']
+  margin          numeric(10,2) [note: 'net_revenue - (quantity * unit_cost)']
+  margin_pct      numeric(6,2)  [note: 'margin / net_revenue * 100']
+
+  // Flags de calidad
+  has_return      boolean       [default: false]
+  total_corrected boolean       [default: false, note: 'true si sale.total fue corregido']
+
+  Note: '42.555 filas. Granularidad: línea de venta. Ingresos totales: 9.678.678,67 €'
+
+  Indexes {
+    customer_id [name: 'idx_fact_customer']
+    product_id  [name: 'idx_fact_product']
+    store_id    [name: 'idx_fact_store']
+    date_id     [name: 'idx_fact_date']
+    sale_id     [name: 'idx_fact_sale']
+    offer_id    [name: 'idx_fact_offer']
+    reason_id   [name: 'idx_fact_reason']
+  }
+}

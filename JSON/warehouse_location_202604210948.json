@@ -1,0 +1,323 @@
+{
+"warehouse_location": [
+	{
+		"location_id" : 1,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "1",
+		"shelf" : "2",
+		"bin_code" : "B1"
+	},
+	{
+		"location_id" : 2,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "1",
+		"shelf" : "3",
+		"bin_code" : "B2"
+	},
+	{
+		"location_id" : 3,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "1",
+		"shelf" : "4",
+		"bin_code" : "B3"
+	},
+	{
+		"location_id" : 4,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "1",
+		"shelf" : "5",
+		"bin_code" : "B4"
+	},
+	{
+		"location_id" : 5,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "2",
+		"shelf" : "1",
+		"bin_code" : "B5"
+	},
+	{
+		"location_id" : 6,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "2",
+		"shelf" : "2",
+		"bin_code" : "B6"
+	},
+	{
+		"location_id" : 7,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "2",
+		"shelf" : "3",
+		"bin_code" : "B7"
+	},
+	{
+		"location_id" : 8,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "2",
+		"shelf" : "4",
+		"bin_code" : "B8"
+	},
+	{
+		"location_id" : 9,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "2",
+		"shelf" : "5",
+		"bin_code" : "B9"
+	},
+	{
+		"location_id" : 10,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "3",
+		"shelf" : "1",
+		"bin_code" : "B10"
+	},
+	{
+		"location_id" : 11,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "3",
+		"shelf" : "2",
+		"bin_code" : "B11"
+	},
+	{
+		"location_id" : 12,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "3",
+		"shelf" : "3",
+		"bin_code" : "B12"
+	},
+	{
+		"location_id" : 13,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "3",
+		"shelf" : "4",
+		"bin_code" : "B13"
+	},
+	{
+		"location_id" : 14,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "3",
+		"shelf" : "5",
+		"bin_code" : "B14"
+	},
+	{
+		"location_id" : 15,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "4",
+		"shelf" : "1",
+		"bin_code" : "B15"
+	},
+	{
+		"location_id" : 16,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "4",
+		"shelf" : "2",
+		"bin_code" : "B16"
+	},
+	{
+		"location_id" : 17,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "4",
+		"shelf" : "3",
+		"bin_code" : "B17"
+	},
+	{
+		"location_id" : 18,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "4",
+		"shelf" : "4",
+		"bin_code" : "B18"
+	},
+	{
+		"location_id" : 19,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "4",
+		"shelf" : "5",
+		"bin_code" : "B19"
+	},
+	{
+		"location_id" : 20,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "5",
+		"shelf" : "1",
+		"bin_code" : "B20"
+	},
+	{
+		"location_id" : 21,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "5",
+		"shelf" : "2",
+		"bin_code" : "B21"
+	},
+	{
+		"location_id" : 22,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "5",
+		"shelf" : "3",
+		"bin_code" : "B22"
+	},
+	{
+		"location_id" : 23,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "5",
+		"shelf" : "4",
+		"bin_code" : "B23"
+	},
+	{
+		"location_id" : 24,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "5",
+		"shelf" : "5",
+		"bin_code" : "B24"
+	},
+	{
+		"location_id" : 25,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "6",
+		"shelf" : "1",
+		"bin_code" : "B25"
+	},
+	{
+		"location_id" : 26,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "6",
+		"shelf" : "2",
+		"bin_code" : "B26"
+	},
+	{
+		"location_id" : 27,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "6",
+		"shelf" : "3",
+		"bin_code" : "B27"
+	},
+	{
+		"location_id" : 28,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "6",
+		"shelf" : "4",
+		"bin_code" : "B28"
+	},
+	{
+		"location_id" : 29,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "6",
+		"shelf" : "5",
+		"bin_code" : "B29"
+	},
+	{
+		"location_id" : 30,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "7",
+		"shelf" : "1",
+		"bin_code" : "B30"
+	},
+	{
+		"location_id" : 31,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "7",
+		"shelf" : "2",
+		"bin_code" : "B31"
+	},
+	{
+		"location_id" : 32,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "7",
+		"shelf" : "3",
+		"bin_code" : "B32"
+	},
+	{
+		"location_id" : 33,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "7",
+		"shelf" : "4",
+		"bin_code" : "B33"
+	},
+	{
+		"location_id" : 34,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "7",
+		"shelf" : "5",
+		"bin_code" : "B34"
+	},
+	{
+		"location_id" : 35,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "8",
+		"shelf" : "1",
+		"bin_code" : "B35"
+	},
+	{
+		"location_id" : 36,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "8",
+		"shelf" : "2",
+		"bin_code" : "B36"
+	},
+	{
+		"location_id" : 37,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "8",
+		"shelf" : "3",
+		"bin_code" : "B37"
+	},
+	{
+		"location_id" : 38,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "8",
+		"shelf" : "4",
+		"bin_code" : "B38"
+	},
+	{
+		"location_id" : 39,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "8",
+		"shelf" : "5",
+		"bin_code" : "B39"
+	},
+	{
+		"location_id" : 40,
+		"warehouse_id" : 1,
+		"zone" : "Zona A",
+		"aisle" : "9",
+		"shelf" : "1",
+		"bin_code" : "B40"
+	}
+]}

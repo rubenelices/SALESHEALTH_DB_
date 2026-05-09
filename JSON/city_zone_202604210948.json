@@ -1,0 +1,339 @@
+{
+"city_zone": [
+	{
+		"postal_code" : "28030",
+		"district" : "Moratalaz",
+		"area_type" : "Periférica",
+		"zone_orientation" : null,
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28001",
+		"district" : "Salamanca",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28004",
+		"district" : "Centro",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28005",
+		"district" : "Centro",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28012",
+		"district" : "Centro",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28013",
+		"district" : "Centro",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28014",
+		"district" : "Centro",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28009",
+		"district" : "Retiro",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28006",
+		"district" : "Salamanca",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28010",
+		"district" : "Chamberí",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28015",
+		"district" : "Chamberí",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28003",
+		"district" : "Chamberí",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28045",
+		"district" : "Arganzuela",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28020",
+		"district" : "Tetuán",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28039",
+		"district" : "Tetuán",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Centro",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28050",
+		"district" : "Hortaleza",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Norte",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28033",
+		"district" : "Hortaleza",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Norte",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28043",
+		"district" : "Hortaleza",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Norte",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28029",
+		"district" : "Fuencarral-El Pardo",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Norte",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28002",
+		"district" : "Chamartín",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Norte",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28016",
+		"district" : "Chamartín",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Norte",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28036",
+		"district" : "Chamartín",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Norte",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28022",
+		"district" : "San Blas-Canillejas",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Noreste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28037",
+		"district" : "San Blas-Canillejas",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Noreste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28042",
+		"district" : "Barajas",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Noreste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28052",
+		"district" : "Barajas",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Noreste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28027",
+		"district" : "Ciudad Lineal",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Este",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28017",
+		"district" : "Ciudad Lineal",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Este",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28032",
+		"district" : "Vicálvaro",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Sureste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28018",
+		"district" : "Puente de Vallecas",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Sureste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28031",
+		"district" : "Villa de Vallecas",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Sureste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28051",
+		"district" : "Villa de Vallecas",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Sureste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28053",
+		"district" : "Puente de Vallecas",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Sureste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28026",
+		"district" : "Usera",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Sur",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28041",
+		"district" : "Villaverde",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Sur",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28021",
+		"district" : "Villaverde",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Sur",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28044",
+		"district" : "Latina",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Suroeste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28047",
+		"district" : "Latina",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Suroeste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28025",
+		"district" : "Carabanchel",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Suroeste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28019",
+		"district" : "Carabanchel",
+		"area_type" : "Periférica",
+		"zone_orientation" : "Suroeste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28008",
+		"district" : "Moncloa-Aravaca",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Noroeste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	},
+	{
+		"postal_code" : "28040",
+		"district" : "Moncloa-Aravaca",
+		"area_type" : "Céntrica",
+		"zone_orientation" : "Noroeste",
+		"city_code" : "28",
+		"city" : "Madrid"
+	}
+]}
