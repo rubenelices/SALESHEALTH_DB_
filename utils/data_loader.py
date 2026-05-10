@@ -25,6 +25,7 @@ import streamlit as st
 PROJECT_ROOT    = Path(__file__).resolve().parent.parent
 CLTV_PATH       = PROJECT_ROOT / 'cltv_resultados.csv'
 CLUSTERING_PATH = PROJECT_ROOT / 'clustering_resultados.csv'
+VENTAS_PATH     = PROJECT_ROOT / 'ventas_detalle.csv'
 
 # Columnas que se esperan en los CSVs (validación de schema en runtime).
 CLTV_REQUIRED_COLS = {
@@ -109,6 +110,19 @@ def load_all() -> pd.DataFrame:
     cols_extra = ['customer_id'] + cols_extra
 
     return df_cltv.merge(df_clu[cols_extra], on='customer_id', how='left')
+
+
+@st.cache_data(ttl=3600, show_spinner=False)
+def load_ventas() -> pd.DataFrame:
+    """Carga ventas_detalle.csv (fact_sales unido con dim_date/product/store).
+
+    Generado por _docs/export_ventas.py. Son 42.555 filas: una por línea de venta.
+    """
+    if not VENTAS_PATH.exists():
+        return pd.DataFrame()
+    df = pd.read_csv(VENTAS_PATH, parse_dates=['sale_date'])
+    df['year_month'] = df['sale_date'].dt.to_period('M').dt.to_timestamp()
+    return df
 
 
 # ═══════════════════════════════════════════════════════════════════════

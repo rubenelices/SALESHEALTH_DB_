@@ -374,6 +374,42 @@ html, body, [class*="css"], .stMarkdown, .stText {
     border-radius: 10px !important;
 }
 
+/* Selectbox — fondo blanco, texto oscuro (tema claro consistente) */
+.stSelectbox > div > div,
+.stSelectbox div[data-baseweb="select"] > div {
+    background-color: #FFFFFF !important;
+    color: #03045E !important;
+    border: 1px solid #E2E8F0 !important;
+}
+.stSelectbox div[data-baseweb="select"] svg {
+    fill: #03045E !important;
+    color: #03045E !important;
+}
+/* Texto del valor seleccionado dentro del selectbox */
+.stSelectbox div[data-baseweb="select"] [data-baseweb="tag"],
+.stSelectbox div[data-baseweb="select"] span,
+.stSelectbox div[data-baseweb="select"] input {
+    color: #03045E !important;
+    background-color: transparent !important;
+}
+/* Dropdown desplegado (popover con las opciones) */
+[data-baseweb="popover"] ul,
+[data-baseweb="popover"] [role="listbox"] {
+    background-color: #FFFFFF !important;
+    border: 1px solid #E2E8F0 !important;
+    border-radius: 10px !important;
+    box-shadow: 0 6px 24px rgba(15,23,42,0.10) !important;
+}
+[data-baseweb="popover"] li {
+    background-color: #FFFFFF !important;
+    color: #1F2937 !important;
+}
+[data-baseweb="popover"] li:hover,
+[data-baseweb="popover"] li[aria-selected="true"] {
+    background-color: #F0F9FF !important;
+    color: #03045E !important;
+}
+
 /* Labels de widgets — visibles sobre cualquier fondo */
 .stTextInput label, .stSelectbox label, .stNumberInput label,
 .stMultiSelect label, .stSlider label, .stToggle label,
@@ -406,19 +442,40 @@ html, body, [class*="css"], .stMarkdown, .stText {
     font-weight: 600;
 }
 
-/* Tabs */
-.stTabs [data-baseweb="tab-list"] { gap: 4px; }
+/* Tabs — pill style con buen contraste */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+    background: transparent;
+    border-bottom: none !important;
+    padding: 4px 0 10px 0;
+}
 .stTabs [data-baseweb="tab"] {
-    border-radius: 10px 10px 0 0;
-    padding: 10px 22px;
-    font-weight: 600;
-    color: #64748B;
+    border-radius: 12px !important;
+    padding: 12px 28px !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+    letter-spacing: 0.01em;
+    background: #FFFFFF !important;
+    color: #475569 !important;
+    border: 1.5px solid #CBD5E1 !important;
+    transition: all 0.18s ease;
+    box-shadow: 0 1px 2px rgba(15,23,42,0.04);
 }
-.stTabs [aria-selected="true"] {
-    background: white;
+.stTabs [data-baseweb="tab"]:hover {
+    background: #F0F9FF !important;
     color: #03045E !important;
-    border-bottom: 3px solid #00B4D8;
+    border-color: #00B4D8 !important;
 }
+.stTabs [data-baseweb="tab"][aria-selected="true"] {
+    background: linear-gradient(135deg, #03045E 0%, #023E8A 100%) !important;
+    color: #FFFFFF !important;
+    border-color: #03045E !important;
+    box-shadow: 0 4px 12px rgba(3,4,94,0.25);
+    border-bottom: none !important;
+}
+/* Quitar la línea de subrayado por defecto de BaseWeb */
+.stTabs [data-baseweb="tab-highlight"] { display: none !important; }
+.stTabs [data-baseweb="tab-border"]    { display: none !important; }
 
 /* Hide pages list in sidebar nav */
 [data-testid="stSidebarNavItems"] { display: none; }
@@ -483,6 +540,7 @@ PAGES_NAV = [
     ('rfm',         'RFM',         '🎯', 'pages/3_RFM.py'),
     ('clustering',  'Clustering',  '🔮', 'pages/4_Clustering.py'),
     ('cliente',     'Cliente',     '👤', 'pages/5_Cliente.py'),
+    ('ventas',      'Ventas',      '🛒', 'pages/6_Ventas.py'),
 ]
 
 TOP_NAV_EYEBROW = 'PROYECTO FINAL · GESTIÓN DE DATOS · RUBEN ELICES RODRIGUEZ'

@@ -140,6 +140,14 @@ CARDS = [
                 'de percentil y clientes similares.',
         'kpi':  'Buscar cliente concreto',
     },
+    {
+        'page': '/Ventas',
+        'icon': '🛒',
+        'title': 'Análisis de ventas',
+        'desc': 'Productos, marcas y tiendas. Top rankings, evolución '
+                'temporal y estadísticas individuales.',
+        'kpi':  'Productos · Marcas · Tiendas',
+    },
 ]
 
 # Renderizar cards en columnas
