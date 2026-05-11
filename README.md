@@ -199,7 +199,7 @@ Orden recomendado:
 ### 3. Lanzar el dashboard
 
 ```bash
-streamlit run 07_dashboard.py
+streamlit run app.py
 ```
 
 ## Resultados destacados
