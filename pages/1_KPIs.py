@@ -17,7 +17,8 @@ from utils.styles import (
     fmt_eur, fmt_int, fmt_pct,
     DS1, DS2, DS3, DS5, DS6, DS7,
 )
-from utils.data_loader import load_all, kpis_globales
+from utils.data_loader import load_all, kpis_globales, load_ventas
+from utils.charts import heatmap_estacionalidad
 
 # ═══════════════════════════════════════════════════════════════════════
 st.set_page_config(page_title='KPIs · SalesHealth',
@@ -69,6 +70,18 @@ kpi_row([
      'label': 'Clientes en riesgo', 'color': 'green'
      if kpis.get('pct_churn', 100) < 30 else 'coral'},
 ])
+
+
+# ═══════════════════════════════════════════════════════════════════════
+#  ESTACIONALIDAD DE INGRESOS — HEATMAP MES × AÑO
+# ═══════════════════════════════════════════════════════════════════════
+df_ventas = load_ventas()
+if not df_ventas.empty:
+    section_divider('ESTACIONALIDAD DE INGRESOS')
+    section_title('Ingresos netos mensuales por año',
+                  label='HEATMAP · INTENSIDAD = VOLUMEN')
+    st.plotly_chart(heatmap_estacionalidad(df_ventas),
+                    use_container_width=True, theme=None)
 
 
 # ═══════════════════════════════════════════════════════════════════════

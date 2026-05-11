@@ -83,6 +83,75 @@ def area_ingresos_anio(df: pd.DataFrame) -> go.Figure:
     return fig
 
 
+def heatmap_estacionalidad(df_ventas: pd.DataFrame) -> go.Figure:
+    """Heatmap de ingresos mensuales por año (estacionalidad de ventas).
+
+    Espera un DataFrame con columnas: year, month, net_revenue.
+    """
+    if df_ventas.empty:
+        return go.Figure()
+
+    pivot = (df_ventas.groupby(['year', 'month'])['net_revenue']
+                       .sum()
+                       .unstack(fill_value=0)
+                       .sort_index())
+
+    # Asegurar las 12 columnas en orden Ene-Dic
+    for m in range(1, 13):
+        if m not in pivot.columns:
+            pivot[m] = 0
+    pivot = pivot[list(range(1, 13))]
+
+    meses = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun',
+             'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic']
+    years = [str(y) for y in pivot.index.tolist()]
+
+    z = pivot.values
+    # Texto: formato "127,9K"
+    def _fmt(v):
+        if v >= 1000:
+            return f'{v/1000:,.1f}K'.replace('.', ',').replace(',0K', 'K')
+        return f'{v:,.0f}'.replace(',', '.')
+    text = [[_fmt(v) for v in row] for row in z]
+
+    # Color: blanco/azul muy claro → DS1 (azul marino)
+    colorscale = [
+        [0.00, '#F0F9FF'],
+        [0.25, '#CAF0F8'],
+        [0.50, '#90E0EF'],
+        [0.75, '#0077B6'],
+        [1.00, '#03045E'],
+    ]
+
+    fig = go.Figure(data=go.Heatmap(
+        z=z,
+        x=meses,
+        y=years,
+        text=text,
+        texttemplate='%{text}',
+        textfont=dict(family='Inter', size=12),
+        colorscale=colorscale,
+        showscale=False,
+        xgap=4, ygap=4,
+        hovertemplate='<b>%{x} %{y}</b><br>'
+                      'Ingresos: %{z:,.0f} €<extra></extra>',
+    ))
+
+    fig.update_layout(
+        font=dict(family='Inter', size=12, color='#1F2937'),
+        plot_bgcolor='white', paper_bgcolor='white',
+        height=320,
+        margin=dict(l=50, r=20, t=20, b=30),
+        hoverlabel=dict(bgcolor='white', bordercolor=DS3,
+                        font=dict(family='Inter', size=12, color=DS1)),
+    )
+    fig.update_xaxes(side='top', tickfont=dict(size=12, color=GRAY),
+                     showgrid=False, zeroline=False)
+    fig.update_yaxes(autorange='reversed', tickfont=dict(size=12, color=GRAY),
+                     showgrid=False, zeroline=False)
+    return fig
+
+
 def treemap_segmento_cluster(df: pd.DataFrame) -> go.Figure:
     """Barras horizontales apiladas: ingresos por cluster y segmento CLTV."""
     if 'cluster_label' not in df.columns or 'segmento_cltv' not in df.columns:
@@ -509,6 +578,7 @@ def sankey_segmentos(df: pd.DataFrame) -> go.Figure:
         font=dict(family='Inter', size=12, color=DS1),
         height=480,
         margin=dict(l=20, r=20, t=40, b=20),
+        plot_bgcolor='white', paper_bgcolor='white',
         title=dict(text='Flujo de clientes: CLTV → RFM',
                    font=dict(size=16, color=DS1, family='Inter')),
     )
@@ -792,6 +862,7 @@ def radar_cluster_vs_global(df: pd.DataFrame, cluster_label: str,
         ),
         font=dict(family='Inter'),
         height=380, margin=dict(l=50, r=50, t=40, b=40),
+        plot_bgcolor='white', paper_bgcolor='white',
         legend=dict(orientation='h', yanchor='bottom', y=-0.1,
                     xanchor='center', x=0.5),
     )
@@ -841,6 +912,7 @@ def radar_cliente_vs_cluster(cliente: pd.Series, cluster_medio: pd.Series,
         ),
         font=dict(family='Inter'),
         height=380, margin=dict(l=50, r=50, t=40, b=40),
+        plot_bgcolor='white', paper_bgcolor='white',
         legend=dict(orientation='h', yanchor='bottom', y=-0.1,
                     xanchor='center', x=0.5),
     )

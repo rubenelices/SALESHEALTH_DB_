@@ -374,6 +374,17 @@ html, body, [class*="css"], .stMarkdown, .stText {
     border-radius: 10px !important;
 }
 
+/* Text input — fondo blanco, texto oscuro (consistente con selectbox) */
+.stTextInput input, .stNumberInput input {
+    background-color: #FFFFFF !important;
+    color: #03045E !important;
+    border: 1px solid #E2E8F0 !important;
+}
+.stTextInput input::placeholder, .stNumberInput input::placeholder {
+    color: #94A3B8 !important;
+    opacity: 1 !important;
+}
+
 /* Selectbox — fondo blanco, texto oscuro (tema claro consistente) */
 .stSelectbox > div > div,
 .stSelectbox div[data-baseweb="select"] > div {
